@@ -7,6 +7,7 @@ from server.models import Book
 
 @flaskapp.route('/')
 def index():
+    password = DodgeMan23
     name = request.args.get('name')
     author = request.args.get('author')
     read = bool(request.args.get('read'))
